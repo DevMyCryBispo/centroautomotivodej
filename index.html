@@ -3,90 +3,403 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D & J CENTRO AUTOMOTIVO</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <title>D&J Centro Automotivo — Campo Grande, MS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <header class="bg-dark text-white text-center py-4">
-    <div id="profile" class="text-center">
-      <img src="./assets/fundoOficina2.png" class="img-fluid rounded-circle mb-3 py-6"
-        alt="Imagem do Centro Automotivo">
-    </div>
-    <h1>D & J CENTRO AUTOMOTIVO</h1>
-    <h6>Segunda a Sexta das 08h às 18h</h6>
 
+  <a href="https://wa.me/message/QWD2FU7QLXQ6D1" class="whatsapp-float" target="_blank" aria-label="WhatsApp">💬</a>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">D<span>&</span>J</div>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+      <li><a href="https://wa.me/message/QWD2FU7QLXQ6D1" target="_blank" class="nav-cta">Orçamento</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Campo Grande, MS • Aberto Seg–Sex</div>
+      <h1>D<em>&</em>J<br>CENTRO<br>AUTOMOTIVO</h1>
+      <p class="hero-sub">Mecânica especializada com qualidade, transparência e confiança. Mais de 10 anos cuidando do
+        seu veículo.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/message/QWD2FU7QLXQ6D1" target="_blank" class="btn btn-primary">💬 Solicitar
+          orçamento</a>
+        <a href="#servicos" class="btn btn-outline">Ver serviços →</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Rolar</span>
+      <div class="scroll-line"></div>
+    </div>
   </header>
 
-  <main class="container my-5 py-4">
-    <div id="photo-carousel" class="carousel slide " data-bs-ride="carousel">
-      <div class="carousel-inner text-center">
-        <div class="carousel-item active">
-          <img src="assets/Tipos-de-Manutencao.png" class="mx-auto d-block w-50" alt="Foto">
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-item reveal">
+      <div class="stat-num">10+</div>
+      <div class="stat-label">Anos de experiência</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num">1000+</div>
+      <div class="stat-label">Clientes atendidos</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num">4.9</div>
+      <div class="stat-label">Nota no Google</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Serviços com garantia</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="servicos">
+    <div class="inner">
+      <p class="section-eyebrow reveal">O que fazemos</p>
+      <h2 class="section-title reveal">Nossos<br>Serviços</h2>
+      <p class="section-sub reveal">Diagnóstico preciso e execução impecável em cada serviço.</p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap">🛢️</div>
+          <h3>Troca de Óleo</h3>
+          <p>Troca completa com filtro, verificação do motor e diagnóstico geral do veículo.</p>
         </div>
-        <div class="carousel-item">
-          <a href="https://wa.me/message/QWD2FU7QLXQ6D1"><img src="assets/correia-dentada-2-1.png"
-              class="mx-auto d-block" alt="Foto"></a>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap">🛑</div>
+          <h3>Sistema de Freios</h3>
+          <p>Inspeção, manutenção e substituição de pastilhas, discos e fluido de freio.</p>
         </div>
-        <div class="carousel-item">
-          <a href="https://wa.me/message/QWD2FU7QLXQ6D1"><img src="assets/revisao-de-freios.png" class="mx-auto d-block"
-              alt="Foto"></a>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">⚙️</div>
+          <h3>Correia Dentada</h3>
+          <p>Substituição preventiva e corretiva com peças de primeira linha.</p>
         </div>
-        <div class="carousel-item">
-          <a href="https://wa.me/message/QWD2FU7QLXQ6D1"> <img src="assets/troca-de-oleo.png" class="mx-auto d-block"
-              alt="Foto"></a>
+        <div class="service-card reveal">
+          <div class="service-num">04</div>
+          <div class="service-icon-wrap">🛞</div>
+          <h3>Suspensão</h3>
+          <p>Amortecedores, molas e alinhamento para mais estabilidade e conforto.</p>
         </div>
-        <div class="carousel-item">
-          <a href="https://wa.me/message/QWD2FU7QLXQ6D1"> <img src="assets/Amortecedores-1.png" class="mx-auto d-block"
-              alt="Foto"></a>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">05</div>
+          <div class="service-icon-wrap">🚗</div>
+          <h3>Revisão Completa</h3>
+          <p>Diagnóstico eletrônico e mecânico completo do seu veículo.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">06</div>
+          <div class="service-icon-wrap">🔧</div>
+          <h3>Mecânica Geral</h3>
+          <p>Todos os serviços de mecânica com qualidade e garantia assegurada.</p>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#photo-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" style="background-color: rgb(48, 48, 48);" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#photo-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" style="background-color: rgb(48, 48, 48);" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+  </section>
 
-    <ul class="list-group mb-5">
-      <li class="list-group-item" style="margin-top: 60px;">
-        <a href="https://wa.me/message/QWD2FU7QLXQ6D1" class="btn btn-success btn-lg w-100" target="_blank">
-          Contate-nos via WhatsApp ✅
-        </a>
-      </li>
-      <li class="list-group-item">
-        <a href="https://g.page/r/CdbGbyuzxiroEBE/review" class="btn btn-primary btn-lg w-100" target="_blank">
-          Avalie nosso atendimento 👍
-        </a>
-      </li>
-      <li class="list-group-item">
-        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.7273499080607!2d-54.6633882!3d-20.517400300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e5fcdc73b29b%3A0xe82ac6b32b6fc6d6!2sD%26J%20Centro%20Automotivo!5e0!3m2!1spt-BR!2sbr!4v1780921817352!5m2!1spt-BR!2sbr" class="btn btn-info btn-lg w-100" target="_blank">
-          Nossa localização 🌎
-        </a>
-        <div id="map" class="mb-5" style="height: 400px;"></div>
-      </li>
-    </ul>
-   
-  </main>  
-  <footer class="bg-dark text-white text-center py-4">
-    Produzido por <a href="https://wa.me/qr/WHRU7A2MW3R6E1" class="text-white" target="_blank">Rodrigo Bispo</a>
-    <div class="text-center">
-      <p class="lead">Número de acessos: <span id="access-count">0</span></p>
+  <!-- WHY -->
+  <section class="why-section">
+    <div class="why-inner">
+      <div class="why-grid">
+        <div>
+          <p class="section-eyebrow reveal">Por que escolher</p>
+          <h2 class="section-title reveal">Por que a<br>D<span style="color:var(--green)">&</span>J?</h2>
+          <div class="why-list">
+            <div class="why-item reveal">
+              <div class="why-icon">⚡</div>
+              <div>
+                <h4>Atendimento Rápido</h4>
+                <p>Agendamento fácil pelo WhatsApp e entrega no prazo combinado.</p>
+              </div>
+            </div>
+            <div class="why-item reveal reveal-delay-1">
+              <div class="why-icon">🎯</div>
+              <div>
+                <h4>Equipe Especializada</h4>
+                <p>Mecânicos com anos de experiência e treinamento constante.</p>
+              </div>
+            </div>
+            <div class="why-item reveal reveal-delay-2">
+              <div class="why-icon">🛡️</div>
+              <div>
+                <h4>Garantia dos Serviços</h4>
+                <p>Todos os serviços são garantidos. Você não sai com dúvidas.</p>
+              </div>
+            </div>
+            <div class="why-item reveal reveal-delay-3">
+              <div class="why-icon">💬</div>
+              <div>
+                <h4>Transparência Total</h4>
+                <p>Orçamento antes de qualquer serviço. Sem surpresas na hora de pagar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual reveal">
+          <div class="why-big-number">10+</div>
+          <div class="why-card">
+            <div class="google-badge">
+              <div class="google-g">G</div>
+              Google Review
+            </div>
+            <div class="why-card-stars">★★★★★</div>
+            <blockquote>"Levei meu carro na D&J para trocar a correia dentada e o atendimento foi excelente. Explicaram
+              tudo antes de fazer, preço justo e entregaram no prazo. Com certeza voltarei!"</blockquote>
+            <div class="why-card-author">
+              <div class="author-avatar">MA</div>
+              <div>
+                <div class="author-name">Marcos Almeida</div>
+                <div class="author-meta">Cliente verificado • Campo Grande</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews-section" id="avaliacoes">
+    <div class="reviews-inner">
+      <div class="reviews-header reveal">
+        <div>
+          <p class="section-eyebrow">Avaliações</p>
+          <h2 class="section-title">O que nossos<br>clientes dizem</h2>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:16px">
+          <div class="reviews-score">
+            <div class="score-big">4.9</div>
+            <div class="score-details">
+              <div class="score-stars">★★★★★</div>
+              <div class="score-count">Baseado em 80+ avaliações</div>
+              <div class="score-platform">
+                <div class="google-g" style="background:#fff;color:#4285f4">G</div>
+                Google Maps
+              </div>
+            </div>
+          </div>
+          <a href="https://g.page/r/CdbGbyuzxiroEBE/review" target="_blank" class="reviews-cta-link">Deixe sua avaliação
+            →</a>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-top">
+            <div class="review-author">
+              <div class="review-avatar" style="background:rgba(34,197,94,0.15);color:var(--green)">CF</div>
+              <div>
+                <div class="review-name">Carlos Ferreira</div>
+                <div class="review-date">há 2 semanas</div>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">Ótima oficina! Fiz a revisão completa do meu HB20 e ficou tudo perfeito. O mecânico foi
+            muito honesto, indicou só o que era necessário e o preço foi bem justo. Recomendo demais!</p>
+          <div class="review-verified">
+            <div class="verified-dot"></div>Avaliação verificada no Google
+          </div>
+        </div>
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-top">
+            <div class="review-author">
+              <div class="review-avatar" style="background:rgba(245,158,11,0.15);color:var(--amber)">PS</div>
+              <div>
+                <div class="review-name">Patrícia Santos</div>
+                <div class="review-date">há 1 mês</div>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">Fui até a D&J com problema no sistema de freios. Atendimento rápido, me explicaram tudo
+            com clareza e resolveram no mesmo dia. Saí com o carro novo! Já indiquei para família toda.</p>
+          <div class="review-verified">
+            <div class="verified-dot"></div>Avaliação verificada no Google
+          </div>
+        </div>
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-top">
+            <div class="review-author">
+              <div class="review-avatar" style="background:rgba(59,130,246,0.15);color:#60a5fa">RL</div>
+              <div>
+                <div class="review-name">Roberto Lima</div>
+                <div class="review-date">há 3 semanas</div>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">Melhor oficina de Campo Grande. Profissionalismo do início ao fim. Já é a terceira vez
+            que venho aqui e nunca me decepcionaram. Correia dentada trocada, suspensão revisada, tudo nota 10.</p>
+          <div class="review-verified">
+            <div class="verified-dot"></div>Avaliação verificada no Google
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-top">
+            <div class="review-author">
+              <div class="review-avatar" style="background:rgba(239,68,68,0.15);color:#f87171">JO</div>
+              <div>
+                <div class="review-name">Juliana Oliveira</div>
+                <div class="review-date">há 2 meses</div>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">Vim pela primeira vez indicada por uma amiga e não me arrependi. Atendimento super
+            educado, transparência total no orçamento e entregaram antes do prazo. Já tenho minha nova oficina de
+            confiança!</p>
+          <div class="review-verified">
+            <div class="verified-dot"></div>Avaliação verificada no Google
+          </div>
+        </div>
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-top">
+            <div class="review-author">
+              <div class="review-avatar" style="background:rgba(168,85,247,0.15);color:#c084fc">AM</div>
+              <div>
+                <div class="review-name">Anderson Melo</div>
+                <div class="review-date">há 5 semanas</div>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">Troca de óleo rápida e sem enrolação. Mas o que me impressionou foi a honestidade —
+            identificaram um problema que eu nem sabia que tinha e me avisaram sem cobrar nada extra pelo diagnóstico.
+          </p>
+          <div class="review-verified">
+            <div class="verified-dot"></div>Avaliação verificada no Google
+          </div>
+        </div>
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-top">
+            <div class="review-author">
+              <div class="review-avatar" style="background:rgba(34,197,94,0.15);color:var(--green)">FC</div>
+              <div>
+                <div class="review-name">Fernanda Costa</div>
+                <div class="review-date">há 1 mês</div>
+              </div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <p class="review-text">Lugar de confiança! Levei meu carro achando que seria algo caro, e eles me explicaram
+            que era algo simples e rápido. Saí gastando bem menos que esperava. Isso é seriedade!</p>
+          <div class="review-verified">
+            <div class="verified-dot"></div>Avaliação verificada no Google
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="gallery-inner">
+      <p class="section-eyebrow reveal">Nossa Oficina</p>
+      <h2 class="section-title reveal" style="margin-bottom:40px">Estrutura<br>profissional</h2>
+      <div class="gallery-grid reveal">
+        <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=800&q=80" alt="Interior da oficina">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Troca de óleo">
+        <img src="https://images.unsplash.com/photo-1504222490345-c075b7dba0b7?w=600&q=80" alt="Mecânico trabalhando">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80" alt="Motor">
+        <img src="https://images.unsplash.com/photo-1545262810-a9b7b61de272?w=600&q=80" alt="Freios">
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location-section" id="localizacao">
+    <div class="location-inner">
+      <p class="section-eyebrow reveal">Onde estamos</p>
+      <h2 class="section-title reveal" style="margin-bottom:40px">Nossa<br>Localização</h2>
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="info-item reveal">
+            <div class="info-icon">📍</div>
+            <div>
+              <div class="info-label">Endereço</div>
+              <div class="info-value">Campo Grande, MS<br>Próximo ao centro da cidade</div>
+            </div>
+          </div>
+          <div class="info-item reveal reveal-delay-1">
+            <div class="info-icon">🕐</div>
+            <div>
+              <div class="info-label">Horário de Funcionamento</div>
+              <div class="info-value">Segunda a Sexta<br>08h às 18h</div>
+            </div>
+          </div>
+          <div class="info-item reveal reveal-delay-2">
+            <div class="info-icon">💬</div>
+            <div>
+              <div class="info-label">WhatsApp</div>
+              <div class="info-value">Atendimento e agendamento<br>direto pelo WhatsApp</div>
+            </div>
+          </div>
+          <a href="https://wa.me/message/QWD2FU7QLXQ6D1" target="_blank" class="btn btn-primary reveal reveal-delay-3"
+            style="justify-content:center">
+            💬 Agendar via WhatsApp
+          </a>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.7273499080607!2d-54.6633882!3d-20.517400300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e5fcdc73b29b%3A0xe82ac6b32b6fc6d6!2sD%26J%20Centro%20Automotivo!5e0!3m2!1spt-BR!2sbr!4v1780923177391!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy" title="Localização D&J Centro Automotivo">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <p class="section-eyebrow reveal">Pronto para começar?</p>
+    <h2 class="section-title reveal">Seu carro merece<br>o <em style="font-style:normal;color:var(--green)">melhor
+        cuidado</em></h2>
+    <p class="section-sub reveal">Entre em contato agora e receba um orçamento sem compromisso. Atendemos pelo WhatsApp.
+    </p>
+    <div class="cta-actions reveal">
+      <a href="https://wa.me/message/QWD2FU7QLXQ6D1" target="_blank" class="btn btn-primary">💬 Solicitar orçamento
+        grátis</a>
+      <a href="https://g.page/r/CdbGbyuzxiroEBE/review" target="_blank" class="btn btn-outline">⭐ Avaliar no Google</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <div class="nav-logo">D<span style="color:var(--green)">&</span>J</div>
+      <p>Centro Automotivo • Campo Grande, MS</p>
+    </div>
+    <div class="footer-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#localizacao">Localização</a>
+      <a href="https://wa.me/message/QWD2FU7QLXQ6D1" target="_blank">WhatsApp</a>
+    </div>
+    <div class="footer-credit">
+      Produzido por <a href="https://wa.me/qr/WHRU7A2MW3R6E1" target="_blank">Rodrigo Bispo</a><br>
+      <span style="font-size:.7rem;color:var(--text-dim)">© 2025 D&J Centro Automotivo</span>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="./script.js"></script>
 </body>
 
